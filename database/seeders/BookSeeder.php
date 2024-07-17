@@ -14,24 +14,64 @@ class BookSeeder extends Seeder
     public function run(): void
     {
         Book::create([
-            'title' => '1984',
-            'description' => 'A dystopian social science fiction novel and cautionary tale about the dangers of totalitarianism.',
-            'image_url'=> 'yandex.com',
-            'isbn'=> '200.003.203'
+            'title' => 'Sale 10%',
+            'description' => 'Dijual Kripik Kaca harga 10k',
+            'image_url'=> '123.com',
+            'isbn'=>'000.000.001',
         ]);
-
         Book::create([
-            'title' => 'Pocong Numpak RX King',
-            'description' => 'Seorang Bapak" madura bernama Pochiniki Ongkekan atau disingkat Pocong, ia sedang naik motor RX King seharga 1 nasi padang berlapis emas 100kg 24 karat',
-            'image_url'=> 'why.rho.vercel.app',
-            'isbn'=> '192.168.0.0.1'
+            'title' => 'Sale 20%',
+            'description' => 'Dijual Kripik Pasir harga 20k',
+            'image_url'=> '001.com',
+            'isbn'=> '000.000.002'
         ]);
-
         Book::create([
-            'title' => 'Bening',
-            'description' => 'gua bisa ketik ini kalau ga ketauan abang gue, klopun ketahuan muka gua bakal di gesrokin ke keyboard, bntar ya gua maiusafhjasiuyfisj dsauhauibnajkd dsagysghb',
-            'image_url'=> 'www.co.id',
-            'isbn'=> '9990.22.1.34.2'
+            'title' => 'Sale 30%',
+            'description' => 'Dijual Kripik Batu harga 39k',
+            'image_url'=> '002.com',
+            'isbn'=> '000.000.003'
+        ]);
+        Book::create([
+            'title' => 'Sale 40%',
+            'description' => 'Dijual Kripik Plastik harga 40k',
+            'image_url'=> '003.com',
+            'isbn'=> '000.000.004'
+        ]);
+        Book::create([
+            'title' => 'Sale 50%',
+            'description' => 'Dijual Kripik PVC harga 50k',
+            'image_url'=> '004.com',
+            'isbn'=> '000.000.005'
+        ]);
+        Book::create([
+            'title' => 'Sale 60%',
+            'description' => 'Dijual Kripik ABS harga 60k',
+            'image_url'=> '005.com',
+            'isbn'=> '000.000.006'
+        ]);
+        Book::create([
+            'title' => 'Sale 70%',
+            'description' => 'Dijual Kripik Bayem harga 70k',
+            'image_url'=> '006.com',
+            'isbn'=> '000.000.007'
+        ]);
+        Book::create([
+            'title' => 'Sale 80%',
+            'description' => 'Dijual Kripik Forced Carbon harga 80k',
+            'image_url'=> '007.com',
+            'isbn'=> '000.000.008'
+        ]);
+        Book::create([
+            'title' => 'Sale 90%',
+            'description' => 'Dijual Kripik Rak Sah Mbayar harga 0k',
+            'image_url'=> '008.com',
+            'isbn'=> '000.000.009'
+        ]);
+        Book::create([
+            'title' => 'Sale 0%',
+            'description' => 'Gaada Diskon AWODKAODKAWOKDOAW',
+            'image_url'=> '009.com',
+            'isbn'=> '123.2200.330913.293.9775'
         ]);
     }
 }
