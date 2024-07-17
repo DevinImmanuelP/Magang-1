@@ -3,9 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Book;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class BookController extends Controller
 {
@@ -13,7 +11,7 @@ class BookController extends Controller
     {
         $title = $request->query('title');
         $isbn = $request->query('isbn');
-
+        
         $book = Book::query();
 
         if ($title) {
@@ -24,7 +22,7 @@ class BookController extends Controller
             $book->where('isbn', 'like', '%'. $isbn. '%');
         }
 
-        $books = $book->get();
-        return response()->json($books);;
+        $books = $book->paginate(5);
+        return response()->json($books);
     }
 }
